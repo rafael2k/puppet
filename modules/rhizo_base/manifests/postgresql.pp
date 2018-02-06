@@ -29,8 +29,6 @@ class rhizo_base::postgresql::common {
 
 }
 
-}
-
 class rhizo_base::postgresql::debian inherits rhizo_base::postgresql::common {
 
   class { 'postgresql::globals':
