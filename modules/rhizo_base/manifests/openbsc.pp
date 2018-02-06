@@ -34,7 +34,7 @@ class rhizo_base::openbsc {
     }
 
   package {  [ 'osmocom-nitb' ]:
-      ensure   => '0.15.1-0rhizo5',
+#      ensure   => '0.15.1-0rhizo5',
       require  => Class['rhizo_base::apt'],
       notify   => [ Exec['hlr_pragma_wal'],
                     Exec['notify-nitb'] ],
