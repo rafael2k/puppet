@@ -293,17 +293,17 @@ class rhizo_base {
     }
 
   exec { 'restart-freeswitch':
-      command     => '/usr/bin/sv restart freeswitch',
+      command     => '/usr/sbin/service freeswitch restart',
       refreshonly => true,
     }
 
   exec { 'restart-rapi':
-      command     => '/usr/bin/sv restart rapi',
+      command     => '/usr/sbin/service rapi restart',
       refreshonly => true,
     }
 
   exec { 'restart-smpp':
-      command     => '/usr/bin/sv restart smpp',
+      command     => '/usr/sbin/service smpp restart',
       refreshonly => true,
     }
   

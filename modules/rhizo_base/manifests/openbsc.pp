@@ -80,7 +80,7 @@ class rhizo_base::openbsc {
     }
 
   exec { 'restart-nitb':
-      command     => '/usr/bin/sv restart osmo-nitb',
+      command     => '/usr/sbin/service osmo-nitb restart',
       require     => Class['rhizo_base::packages'],
       refreshonly => true,
     }

@@ -18,7 +18,7 @@ class rhizo_base::lcr {
     }
 
   exec { 'restart-lcr':
-      command     => '/usr/bin/sv restart lcr',
+      command     => '/usr/sbin/service lcr restart',
       refreshonly => true,
     }
 

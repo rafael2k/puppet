@@ -58,7 +58,7 @@ PYTHONPATH=$PYTHONPATH:/var/rhizomatica/rccn
   0 10    *   *   *     root [ $(date +'\%d' -d tomorrow) -eq 1 ] && /var/rhizomatica/bin/active_subscribers.sh
 
 #Restart osmo-nitb every 6 hours (This wasn't working anyway. If it is needed, do something more elegant!)
-#  0 */6   *   *   *     root /usr/bin/sv restart osmo-nitb 2>&1 > /dev/null
+#  0 */6   *   *   *     root /usr/sbin/service osmo-nitb restart 2>&1 > /dev/null
 
 # It's a new day....
   30  5  *   *   *      root /home/rhizomatica/bin/check_broken.sh
